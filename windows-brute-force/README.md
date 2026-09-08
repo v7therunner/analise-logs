@@ -8,7 +8,7 @@ serviço SMB de uma VM Windows 10, utilizando o NetExec:
 nxc smb <IP_DO_WINDOWS> -u Administrador -p wordlist_pequena.txt
 \`\`\`
 
-![linux](windows-brute-force/VirtualBox_vm linux_04_09_2026_11_37_50.png)
+![linux](VirtualBox_vm%20linux_04_09_2026_11_37_50.png)
 
 ## Evidência no Event Viewer
 Cada tentativa gerou dois eventos 4625 no log de segurança do Windows: um 
