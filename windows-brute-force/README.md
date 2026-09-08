@@ -18,29 +18,22 @@ Account Name "Administrador" e Account Domain "windows"
 identificados no evento.
 ![ipadm](prints/ip-linux-administrador.png)
 Mesmo evento, mostrando o Source Network Address com o IP 
-do Kali Linux, confirmando a origem do ataque.
+do Kali Linux e confirmando a origem do ataque.
 
 ### Evento de handshake (negociação inicial da conexão)
 ![logwindows](prints/log-sem-administrador.png)
-Mesmo evento (4625), porém sem Account Name/Domain 
-preenchidos — apenas NULL SID.
+Mesma tentativa de requisição, porém sem o Account Name e o Account Domain 
+preenchidos, apenas NULL SID.
 ![iplinuxsemadm](prints/ip-linux-log-sem-administrador.png)
-Mesmo evento, também mostrando o IP de origem do Kali, 
-confirmando que ambos os eventos pertencem à mesma tentativa de conexão.
+Mesmo evento da fase de negociação, que também mostra o IP de origem do Kali Linux, e 
+confirma que ambos os eventos pertencem à mesma tentativa de conexão.
 
 ## Por que dois eventos por tentativa?
-Comparando os dois eventos gerados na mesma tentativa: em ambos o Security 
+Comparando os dois eventos gerados na mesma tentativa, em ambos o Security 
 ID aparece como NULL SID (padrão em falha de logon). A diferença está nos 
-campos Account Name e Account Domain, preenchidos apenas no evento de 
-autenticação (Prints 2 e 3), e vazios no evento de handshake (Prints 4 e 5).
-Em ambos os casos, porém, o IP de origem (Kali) fica registrado — evidência 
-de que os dois eventos vêm da mesma conexão de rede.
+campos Account Name e Account Domain do Event Viewer, preenchidos apenas no evento de 
+autenticação (prints 2 e 3), e vazios no evento de handshake (prints 4 e 5).
+No entanto, nos dois eventos o IP de origem do Kali Linux fica registrado.
 
 ## Conclusão
-O volume real de tentativas de senha corresponde à metade do total de 
-eventos 4625 registrados. Um analista que correlacionar pelo total bruto 
-superestima o ataque em 2x.
-
-**Ação recomendada:** alertar sobre picos de eventos 4625 **com Account 
-Name preenchido**, não pelo total bruto — e configurar limite de tentativas 
-falhas por conta/IP de origem em uma janela de tempo curta.
+Investigando os eventos gerados, percebi que os vários eventos de número 4625 não correspondem diretamente aos números de tentativas de ataque. Este detalhe me levou a entender a importância de analisar cada evento individualmente, e saber que deve-se analisar as informações fornecidas antes de tirar uma conclusão.
