@@ -22,7 +22,8 @@ Mesmo evento, mostrando o Source Network Address com o IP
 do Kali Linux, confirmando a origem do ataque.
 
 ### Evento de handshake (negociação inicial da conexão)
-**Print 4** — Mesmo evento (4625), porém sem Account Name/Domain 
+![logwindows](log-sem-administrador.png)
+Mesmo evento (4625), porém sem Account Name/Domain 
 preenchidos — apenas NULL SID.
 **Print 5** — Mesmo evento, também mostrando o IP de origem do Kali, 
 confirmando que ambos os eventos pertencem à mesma tentativa de conexão.
