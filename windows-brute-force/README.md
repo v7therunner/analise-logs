@@ -4,9 +4,7 @@
 A partir do Kali Linux, foi executado um ataque de força bruta contra o 
 serviço SMB de uma VM Windows 10, utilizando o NetExec:
 
-\`\`\`bash
 nxc smb <IP_DO_WINDOWS> -u Administrador -p wordlist_pequena.txt
-\`\`\`
 
 ![linux](VirtualBox_vm%20linux_04_09_2026_11_37_50.png)
 
@@ -16,7 +14,8 @@ correspondente ao handshake/negociação da conexão SMB, e outro à tentativa
 de autenticação em si.
 
 ### Evento de autenticação (com credencial testada)
-**Print 2** — Account Name "Administrador" e Account Domain "windows" 
+![adm](administrador.png)
+Account Name "Administrador" e Account Domain "windows" 
 identificados no evento.
 **Print 3** — Mesmo evento, mostrando o Source Network Address com o IP 
 do Kali Linux, confirmando a origem do ataque.
