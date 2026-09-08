@@ -6,10 +6,10 @@ gerados, sem depender de dashboard/SIEM.
 
 ## Cenário
 
-Força Bruta via SMB — Ataque simulado a partir do Kali Linux contra uma VM Windows 10, com 
+Força Bruta via SMB — Ataque simulado a partir de uma VM Kali Linux contra uma VM Windows 10, com 
 investigação dos eventos 4625 gerados no Event Viewer.
 
 ## Ambiente
 - Atacante: Kali Linux
 - Alvo: Windows 10 Home
-- Ferramenta: CrackMapExec (CME)
+- Ferramenta: CrackMapExec (CME); Event Viewer
