@@ -6,7 +6,7 @@ serviço SMB de uma VM Windows 10, utilizando o NetExec:
 
 nxc smb <IP_DO_WINDOWS> -u Administrador -p wordlist_pequena.txt
 
-![linux](kalilinux-mapexec.png)
+![linux](prints/kalilinux-mapexec.png)
 
 ## Evidência no Event Viewer
 Cada tentativa gerou dois eventos 4625 no log de segurança do Windows: um 
@@ -14,18 +14,18 @@ correspondente ao handshake/negociação da conexão SMB, e outro à tentativa
 de autenticação em si.
 
 ### Evento de autenticação (com credencial testada)
-![adm](administrador.png)
+![adm](prints/administrador.png)
 Account Name "Administrador" e Account Domain "windows" 
 identificados no evento.
-![ipadm](ip-linux-administrador.png)
+![ipadm](prints/ip-linux-administrador.png)
 Mesmo evento, mostrando o Source Network Address com o IP 
 do Kali Linux, confirmando a origem do ataque.
 
 ### Evento de handshake (negociação inicial da conexão)
-![logwindows](log-sem-administrador.png)
+![logwindows](prints/log-sem-administrador.png)
 Mesmo evento (4625), porém sem Account Name/Domain 
 preenchidos — apenas NULL SID.
-![iplinuxsemadm](ip-linux-log-sem-administrador.png)
+![iplinuxsemadm](prints/ip-linux-log-sem-administrador.png)
 Mesmo evento, também mostrando o IP de origem do Kali, 
 confirmando que ambos os eventos pertencem à mesma tentativa de conexão.
 
