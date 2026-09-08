@@ -17,7 +17,7 @@ de autenticação em si.
 ![adm](administrador.png)
 Account Name "Administrador" e Account Domain "windows" 
 identificados no evento.
-![ipadm](iplinux%20administrador.png)
+![ipadm](ip-linux-administrador.png)
 Mesmo evento, mostrando o Source Network Address com o IP 
 do Kali Linux, confirmando a origem do ataque.
 
