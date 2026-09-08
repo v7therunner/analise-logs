@@ -25,7 +25,8 @@ do Kali Linux, confirmando a origem do ataque.
 ![logwindows](log-sem-administrador.png)
 Mesmo evento (4625), porém sem Account Name/Domain 
 preenchidos — apenas NULL SID.
-**Print 5** — Mesmo evento, também mostrando o IP de origem do Kali, 
+![iplinuxsemadm](ip-linux-log-sem-administrador.png)
+Mesmo evento, também mostrando o IP de origem do Kali, 
 confirmando que ambos os eventos pertencem à mesma tentativa de conexão.
 
 ## Por que dois eventos por tentativa?
