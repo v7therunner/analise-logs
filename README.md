@@ -8,8 +8,8 @@ gerados, sem depender de dashboard/SIEM.
 
 1. Força Bruta via SMB
 
-Ataque simulado a partir do Kali Linux contra uma VM Windows 10, com 
-investigação dos eventos 4625 gerados no Event Viewer.
+ Ataque simulado a partir do Kali Linux contra uma VM Windows 10, com 
+ investigação dos eventos 4625 gerados no Event Viewer.
 
 ## Ambiente
 - Atacante: Kali Linux
