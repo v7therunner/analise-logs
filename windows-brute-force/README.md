@@ -17,7 +17,8 @@ de autenticação em si.
 ![adm](administrador.png)
 Account Name "Administrador" e Account Domain "windows" 
 identificados no evento.
-**Print 3** — Mesmo evento, mostrando o Source Network Address com o IP 
+![ipadm](iplinux%20administrador.png)
+Mesmo evento, mostrando o Source Network Address com o IP 
 do Kali Linux, confirmando a origem do ataque.
 
 ### Evento de handshake (negociação inicial da conexão)
