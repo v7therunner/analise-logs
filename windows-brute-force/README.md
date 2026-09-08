@@ -1,10 +1,10 @@
 # Força Bruta via SMB — Investigação
 
 ## O que foi feito
-A partir do Kali Linux, foi executado um ataque de força bruta contra o 
-serviço SMB de uma VM Windows 10, utilizando o NetExec:
+A partir da VM do Kali Linux, foi executado um ataque de força bruta contra o 
+serviço SMB de uma VM Windows 10, utilizando o comando:
 
-nxc smb <IP_DO_WINDOWS> -u Administrador -p wordlist_pequena.txt
+crackmapexec smb <ip_do_windows> -u Administrador -p rockyou.txt
 
 ![linux](prints/kalilinux-mapexec.png)
 
