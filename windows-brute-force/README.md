@@ -10,8 +10,7 @@ crackmapexec smb <ip_do_windows> -u Administrador -p rockyou.txt
 
 ## Evidência no Event Viewer
 Cada tentativa gerou dois eventos 4625 no log de segurança do Windows: um 
-correspondente ao handshake/negociação da conexão SMB, e outro à tentativa 
-de autenticação em si.
+correspondente à tentativa de autenticação em si, e o outro ao handshake/negociação de conexão SMB.
 
 ### Evento de autenticação (com credencial testada)
 ![adm](prints/administrador.png)
